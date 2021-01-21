@@ -96,5 +96,29 @@
     }
 }
 
+.slider-btn{
+    padding: 16px 26px;
+    border: none;
+    background-color: #000000;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 5;
+    bottom: -45px;
+    svg{
+        stroke: #000;
+    }
+    &__left{
+        right: 60px;
+    }
+    &.slick-disabled{
+        background-color: #000000;
+        svg{
+            stroke: #ffffff;
+        }
+    }
+}
+
+
 
 @import "media";
