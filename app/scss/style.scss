@@ -174,43 +174,50 @@
             margin-left: 40px;
             transform: translateY(25px);
         }
-    }
-    &__item-1,
-    &__item-3{
-        position: relative;
-        &::before,
-        &::after{
-            content: "";
-            position: absolute;
-            background-repeat: no-repeat;
-            background-position: 0 0;
+        &::nth-child(3){
+            margin-left: 30px;
+        }
+        &::nth-child(4){
+            margin-left: 60px;
+        }
+        &:first-child,
+        &:nth-child(3){
+            position: relative;
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+        }
+        &:first-child{
+            &::before{
+                height: 48px;
+                width: 245px;
+                background-image: url('../images/line-1.svg');
+                right: -56px;
+                top: 31px;
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                background-image: url('../images/line-3.svg');
+                width: 254px;
+                height: 43px;
+                right: -55px;
+                top: 50px;
+            }
+            &::after{
+                background-image: url('../images/line-2.svg');
+                width: 463px;
+                height: 62px;
+                top: -70px;
+                right: -54px;
+            }
         }
     }
-    &__item-1{
-        &::before{
-            height: 48px;
-            width: 245px;
-            background-image: url('../images/line-1.svg');
-            right: -56px;
-            top: 31px;
-        }
-    }
-    &__item-3{
-        &::before{
-            background-image: url('../images/line-3.svg');
-            width: 254px;
-            height: 39px;
-            right: -55px;
-            top: 50px;
-        }
-        &::after{
-            background-image: url('../images/line-2.svg');
-            width: 463px;
-            height: 62px;
-            top: -70px;
-            right: -54px;
-        }
-    }
+    
     &__num{
         line-height: 41px;
         font-size: 36px;
@@ -244,6 +251,28 @@
     &__info-text{
         font-size: 15px;
         line-height: 18px;
+    }
+}
+
+.specification{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+
+    }
+    &__box{
+        width: 280px;
+    }
+    &__box-title{
+        font-size: 21px;
+        line-height: 28px;
+        @extend %ubuntu-bold;
+        margin-bottom: 10px;
+    }
+    &__box-text{
+
     }
 }
 
