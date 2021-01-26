@@ -258,12 +258,20 @@
     &__inner{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__item{
-
     }
     &__box{
         width: 280px;
+        position: relative;
+        &:first-child::before,
+        &:nth-child()::before,
+        &:nth-child()::before,
+        &:nth-child()::before{
+            content: "";
+            position: absolute;
+        }
     }
     &__box-title{
         font-size: 21px;
@@ -272,7 +280,9 @@
         margin-bottom: 10px;
     }
     &__box-text{
-
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 
