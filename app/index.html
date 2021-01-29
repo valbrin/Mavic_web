@@ -15,12 +15,14 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
-          <picture class="logo__img">
-            <source srcset="images/logo-mobile.png" media="(max-width: 600px)"> 
-            <img src="images/logo.png" alt="">
-          </picture>
-        </a>
+        <div id="header__nav" data-menuanchor="top">
+          <a class="logo" href="#top">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 600px)"> 
+              <img src="images/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
         <nav class="menu">
           <button class="menu__btn">
             <span class="menu__btn-line"></span>
@@ -42,7 +44,7 @@
               <a class="menu__list-link" href="#contacts">КОНТАКТЫ</a>
             </li>
             <li class="menu__list-phone">
-              <a class="header__phone" href="tel:80505676767">8 (050) 567 67 67</a>
+              <a class="header__phone-menu" href="tel:80505676767">8 (050) 567 67 67</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +57,7 @@
   </header>
   <!-- 1 -->
 <main id="fullpage">
-  <section class="page-section top">
+  <section data-anchor="top" class="page-section top">
     <div class="page-section__wrapper top__wrapper">
     <div class="container">
       <div class="top__inner">
@@ -93,7 +95,7 @@
     </div>
   </section>
   <!-- 2 -->
-  <section id="products" class="page-section products">
+  <section data-anchor="products" class="page-section products">
     <div class="page-section__wrapper">
       <div class="container">
         <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -146,7 +148,7 @@
     </div>
   </section>
   <!-- 3 -->
-  <section id="benefits" class="page-section benefits">
+  <section data-anchor="benefits" class="page-section benefits">
     <div class="page-section__wrapper">
       <div class="container">
         <h3 class="title">Преимущества</h3>
@@ -232,7 +234,7 @@
     </div>
   </section>
   <!-- 4 -->
-  <section id="specification" class="page-section specification">
+  <section data-anchor="specification" class="page-section specification">
     <div class="page-section__wrapper">
       <div class="container">
         <h3 class="title">Характеристики</h3>
@@ -281,7 +283,7 @@
     </div>
   </section>
   <!-- 5 -->
-  <section id="questions" class="page-section questions">
+  <section data-anchor="questions" class="page-section questions">
     <div class="page-section__wrapper">
       <div class="container">
         <h3 class="title">Остались вопросы?</h3>
@@ -324,7 +326,7 @@
     </div>
   </section>
   <!-- 6 -->
-  <section id="contacts" class="page-section contacts">
+  <section data-anchor="contacts" class="page-section contacts">
     <div class="page-section__wrapper">
       <div class="container">
         <h3 class="title">Контакты </h3>
